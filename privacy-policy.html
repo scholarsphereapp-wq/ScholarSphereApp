@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Pectaa Quiz App - Learn about how we collect, use, and protect your personal information.">
+  <title>Privacy Policy - Pectaa Quiz</title>
+  <!-- Google Fonts: Inter and Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Clean Slate & Vibrant Royal Blue Theme */
+      --background: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --card-bg-alt: #F1F5F9;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --primary: #2563EB;
+      --primary-light: #3B82F6;
+      --accent: #06B6D4;
+      --divider: #E2E8F0;
+      --success: #10B981;
+      --error: #EF4444;
+      --shadow: rgba(15, 23, 42, 0.04);
+    }
+
+    /* Dark Mode: Deep Space Blue & Indigo Accent */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0B0F17;
+        --card-bg: #151E2E;
+        --card-bg-alt: #1E293B;
+        --text-primary: #F8FAFC;
+        --text-secondary: #94A3B8;
+        --primary: #38BDF8;
+        --primary-light: #06B6D4;
+        --accent: #6366F1;
+        --divider: #1E293B;
+        --shadow: rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Premium Floating Header Card */
+    header {
+      background-color: var(--card-bg);
+      border: 1px solid var(--divider);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px var(--shadow);
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .logo-container {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px auto;
+      font-family: 'Outfit', sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: var(--card-bg-alt);
+      color: var(--text-secondary);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    /* Policy Sections */
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--divider);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 16px var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1.5px solid var(--divider);
+      padding-bottom: 10px;
+    }
+
+    h2 svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--text-secondary);
+    }
+
+    p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      text-align: justify;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+
+    li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1;
+      top: 2px;
+    }
+
+    .highlight-box {
+      background-color: var(--card-bg-alt);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .highlight-box p {
+      color: var(--text-primary);
+      font-weight: 500;
+      font-size: 13.5px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      border-top: 1px solid var(--divider);
+      padding-top: 20px;
+    }
+
+    footer a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+      header {
+        padding: 30px 15px;
+      }
+      section {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Pectaa Quiz Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+        <span style="display: none; font-size: 36px; font-weight: 900; line-height: 80px; text-align: center; width: 100%; height: 100%;">P</span>
+      </div>
+      <h1>Pectaa Quiz</h1>
+      <div class="subtitle">Privacy Policy for Mobile Application</div>
+      <span class="last-updated">Last Updated: August 8, 2026</span>
+    </header>
+
+    <main>
+      <section>
+        <h2>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          Introduction
+        </h2>
+        <p>Welcome to <strong>Pectaa Quiz</strong> ("we", "our", or "us"). We are committed to protecting your privacy and providing a safe, educational, and engaging environment. This Privacy Policy describes how we handle the collection, use, and protection of your personal information when you use our mobile application.</p>
+        <p>By downloading or using the Pectaa Quiz mobile application, you agree to the collection and use of information in accordance with this policy.</p>
+      </section>
+
+      <section>
+        <h2>
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          Information Collection & Use
+        </h2>
+        <p>To provide and improve our educational and leaderboard services, we may collect the following types of information:</p>
+        <ul>
+          <li><strong>Account Details:</strong> When you register or sign in (via email or Google Sign-In), we store your name, email address, and selected class or study choices.</li>
+          <li><strong>Performance Stats:</strong> We collect and store your quiz scores, completion times, and daily study streaks. This data is essential for computing leaderboard rankings and awarding rewards.</li>
+          <li><strong>Shipping Information:</strong> If you qualify for and claim streak rewards (Gifts), we collect your phone number and delivery address to package and ship your reward.</li>
+        </ul>
+        <div class="highlight-box">
+          <p>⚠️ Important: Your shipping and contact details are collected strictly for reward delivery. They are confidential and will never be shared with third parties or used for promotional purposes.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          Data Security
+        </h2>
+        <p>The security of your data is very important to us. We use secure cloud infrastructure (Google Firebase) to host our database. All data transfers between the app and Firestore are protected by SSL/TLS encryption.</p>
+        <p>While we strive to use commercially acceptable means to protect your Personal Information, no method of transmission over the Internet, or method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+      </section>
+
+      <section>
+        <h2>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          Third-Party Services & Ads
+        </h2>
+        <p>Our app incorporates third-party SDKs that collect information to serve advertisements and handle notifications:</p>
+        <ul>
+          <li><strong>Google AdMob:</strong> We show ads to keep this app free for students. AdMob may collect device advertising IDs and location parameters to serve relevant ads.</li>
+          <li><strong>Firebase Services:</strong> We use Firebase Authentication, Firestore, and Cloud Messaging (FCM) to sync user profiles, quiz sets, and deliver streak reminder push notifications.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>
+          <svg viewBox="0 0 24 24"><path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3h.5c4.69 0 8.5-3.81 8.5-8.5S16.19 2 11.5 2zm1 10h-2V7h2v5zm0 4h-2v-2h2v2z"/></svg>
+          Contact Us
+        </h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, or want to request deletion of your account and personal data, do not hesitate to contact us at:</p>
+        <p style="font-weight: 600; color: var(--text-primary);">📧 Email: scholarsphereapp@gmail.com</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Pectaa Quiz. All Rights Reserved. | Maintained by <a href="https://appixdevelopers.com" target="_blank" rel="noopener">Appix Developers</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
